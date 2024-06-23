@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Rightform from "./components/Right";
+import BasicExample from "./components/Footer";
+import FieldTemplateSearch from "./components/Ui";
+import { useState } from "react";
 
 function App() {
+  const [formData, setFormData] = useState({});
+
+  const handleFormData = (data) => {
+    setFormData(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ display: "flex", height: "490px", marginTop: "5%" }}>
+        <div style={{ position: "fixed", width: "50%" }}>
+          <FieldTemplateSearch />
+        </div>
+        <div style={{ marginLeft: "50%", width: "100%", overflow: "scroll" }}>
+          <Rightform onFormDataChange={handleFormData} />
+        </div>
+      </div>
+      <BasicExample formData={formData} />
+    </>
   );
 }
 

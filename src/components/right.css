@@ -1,0 +1,47 @@
+.contents {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.invoice-details {
+    color: purple;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.page-number {
+    background-color: purple;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    color: white;
+    text-align: center;
+}
+
+.buttons button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: darkviolet;
+}

@@ -1,0 +1,75 @@
+.navbar-custom {
+    background-color: #ccc;
+}
+
+.container-custom {
+    margin-left: 0px !important;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: calc(80% - 300px);
+    /* Adjust the width to leave space for actions */
+}
+
+.info-item {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+.info-item .value {
+    color: rgb(6, 239, 7);
+}
+
+.info-item.danger .value {
+    color: red;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.action-select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.action {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action.reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.action.reject:hover {
+    background-color: #c82333;
+}
+
+.action.approve {
+    background-color: #007bff;
+    color: white;
+}
+
+.action.approve:hover {
+    background-color: #0056b3;
+}
